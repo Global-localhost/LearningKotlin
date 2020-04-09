@@ -14,13 +14,13 @@ abstract class Pet(name: String) {
 }
 
 
-class Dog(name): Pet(name) {
+class Dog(name: String): Pet(name) {
     override fun giveSound(): String {
         return "bark"
     }
 }
 
-class Cat(name): Pet(name) {
+class Cat(name: String): Pet(name) {
     companion object {
         fun create(name: String) = Cat(name)
     }
